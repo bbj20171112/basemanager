@@ -1,0 +1,12 @@
+E:\workspace\bbjframe\basemanager\bbj-base-controller\src\main\java\com\bbj\controller\base\controller\WidgetsController.java
+E:\workspace\bbjframe\basemanager\bbj-base-controller\src\main\java\com\bbj\controller\base\filter\EncodingFilter.java
+E:\workspace\bbjframe\basemanager\bbj-base-controller\src\main\java\com\bbj\controller\base\responseconverter\BBJRequestResponseBodyMethodProcessor.java
+E:\workspace\bbjframe\basemanager\bbj-base-controller\src\main\java\com\bbj\controller\base\controller\TemplateController.java
+E:\workspace\bbjframe\basemanager\bbj-base-controller\src\main\java\com\bbj\controller\base\responseconverter\BBJMappingJackson2HttpMessageConverter.java
+E:\workspace\bbjframe\basemanager\bbj-base-controller\src\main\java\com\bbj\controller\base\controller\MenuController.java
+E:\workspace\bbjframe\basemanager\bbj-base-controller\src\main\java\com\bbj\controller\base\responseconverter\AbstractBBJMappingJackson2HttpMessageConverter.java
+E:\workspace\bbjframe\basemanager\bbj-base-controller\src\main\java\com\bbj\controller\base\responseconverter\BBJResponseBody.java
+E:\workspace\bbjframe\basemanager\bbj-base-controller\src\main\java\com\bbj\controller\base\responseconverter\ObjectHttpMessageConverter.java
+E:\workspace\bbjframe\basemanager\bbj-base-controller\src\main\java\com\bbj\controller\base\filter\BBJDispatcherServlet.java
+E:\workspace\bbjframe\basemanager\bbj-base-controller\src\main\java\com\bbj\controller\base\responseconverter\BBJWebBindingInitializer.java
+E:\workspace\bbjframe\basemanager\bbj-base-controller\src\main\java\com\bbj\controller\base\responseconverter\BBJAnnotationMethodHandlerAdapter.java

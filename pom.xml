@@ -1,0 +1,247 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.bbj</groupId>
+	<artifactId>basemanager</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>bbj-base-controller</module>
+		<module>bbj-base-bizlogic</module>
+		<module>bbj-base-test</module>
+	</modules>
+
+	<properties>
+		<bbj-base-version>0.0.1-SNAPSHOT</bbj-base-version>
+		<jstl.base.version>1.2</jstl.base.version>
+		<jsp.base.version>2.1</jsp.base.version>
+		<servlet.base.version>3.0-alpha-1</servlet.base.version>
+		<spring.base.version>4.3.8.RELEASE</spring.base.version>
+		<gson.base.version>2.8.0</gson.base.version>
+		<mysql.base.version>5.1.39</mysql.base.version>
+		<jackson.base.version>2.8.9</jackson.base.version>
+		<thymeleaf.base.version>3.0.2.RELEASE</thymeleaf.base.version>
+
+		<!-- java version -->
+		<source-version>1.8</source-version>
+		<target-version>1.8</target-version>
+
+		<!-- maven plugin version for this project -->
+		<maven-compiler-plugin-version>3.2</maven-compiler-plugin-version>
+		<maven-jar-plugin-version>2.4</maven-jar-plugin-version>
+		<maven-resources-plugin-version>2.6</maven-resources-plugin-version>
+		<maven-source-plugin-version>2.2.1</maven-source-plugin-version>
+		<exec-maven-plugin-version>1.2.1</exec-maven-plugin-version>
+		<tomcat7-maven-plugin-version>2.2</tomcat7-maven-plugin-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<dependencies>
+		<!-- start 2017-11-12 21:21 添加 by 陆瑞华 -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${jstl.base.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>${jsp.base.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${servlet.base.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- end 2017-11-12 21:21 添加 by 陆瑞华 -->
+
+		<!-- start 2017-11-12 21:21 添加 by 陆瑞华 -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.base.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.base.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${spring.base.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.base.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.base.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.base.version}</version>
+		</dependency>
+		<!-- end 2017-11-12 21:21 添加 by 陆瑞华 -->
+
+		<!-- gson start 2017-11-12 23:33 添加 by 陆瑞华 -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>${gson.base.version}</version>
+		</dependency>
+		<!-- gson end 2017-11-12 23:33 添加 by 陆瑞华 -->
+
+		<!-- start 2017-11-26 22:46 添加 by 陆瑞华 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.base.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.base.version}</version>
+		</dependency>
+
+		<!-- end 2017-11-26 22:46 添加 by 陆瑞华 -->
+
+		<!-- jackson end 2017-11-13 22:51 添加 by 陆瑞华 -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.base.version}</version>
+		</dependency>
+		<!-- jackson end 2017-11-13 22:51 添加 by 陆瑞华 -->
+
+		<!-- thymeleaf start 2017-11-16 23:21 添加 by 陆瑞华 -->
+		<dependency>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf</artifactId>
+			<version>${thymeleaf.base.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf-spring4</artifactId>
+			<version>3.0.2.RELEASE</version>
+		</dependency>
+		<!-- thymeleaf end 2017-11-16 23:21 添加 by 陆瑞华 -->
+
+		<dependency>
+			<groupId>wsdl4j</groupId>
+			<artifactId>wsdl4j</artifactId>
+			<version>1.6.2</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<!-- 编译插件 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin-version}</version>
+				<configuration>
+					<source>${source-version}</source>
+					<target>${target-version}</target>
+					<encoding>utf-8</encoding>
+				</configuration>
+			</plugin>
+
+			<!-- 源码插件 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>${maven-source-plugin-version}</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<phase>package</phase>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+				<!-- 下面这段配置注释掉时，打包时将会打出源码包 -->
+				<configuration>
+					<skipSource>
+						true
+					</skipSource>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>${maven-jar-plugin-version}</version>
+				<configuration>
+					<classesDirectory>target/classes/</classesDirectory>
+					<archive>
+						<compress>true</compress>
+						<addMavenDescriptor>false</addMavenDescriptor>
+					</archive>
+					<excludes>
+						<exclude>**/allatori.xml</exclude>
+						<exclude>**/rebel.xml</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+
+			<!-- Copy and filter allatori config file -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>${maven-resources-plugin-version}</version>
+				<executions>
+					<execution>
+						<id>copy-and-filter-allatori-config</id>
+						<phase>package</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target</outputDirectory>
+							<resources>
+								<resource>
+									<directory>${basedir}/src/main/resources</directory>
+									<includes>
+										<include>allatori.xml</include>
+									</includes>
+									<filtering>true</filtering>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!-- jrebel的文件生成路径 -->
+			<plugin>
+				<groupId>org.zeroturnaround</groupId>
+				<artifactId>jrebel-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>generate-rebel-xml</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<rebelXmlDirectory>${basedir}/src/main/resources</rebelXmlDirectory>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
