@@ -89,8 +89,24 @@ public class MenuService {
 		attr = new HashMap<String, String>();
 		attr.put("id", "3");
 		attr.put("upId", "0");
-		attr.put("text", "menu3");
+		attr.put("text", "JackW");
 		attr.put("link", "template/profile");
+		menu = new MenuObject(attr );
+		list.add(menu );
+		
+		attr = new HashMap<String, String>();
+		attr.put("id", "9");
+		attr.put("upId", "3");
+		attr.put("text", "register");
+		attr.put("link", "/base/widgets/register");
+		menu = new MenuObject(attr );
+		list.add(menu );
+		
+		attr = new HashMap<String, String>();
+		attr.put("id", "10");
+		attr.put("upId", "3");
+		attr.put("text", "login");
+		attr.put("link", "/base/widgets/login");
 		menu = new MenuObject(attr );
 		list.add(menu );
 
