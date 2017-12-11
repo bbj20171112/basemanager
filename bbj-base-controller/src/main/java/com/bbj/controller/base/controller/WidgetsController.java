@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class WidgetsController {
 
 	/**
-	 * 跳转到grid页面
+	 * 跳转到grid页面 
 	 * @param request
 	 * @return 跳转的页面
 	 */
@@ -25,5 +25,23 @@ public class WidgetsController {
 		request.setAttribute("test", "abcd");
 		return "widgets/grid";
 	}
+	@RequestMapping({"/button"})
+    public String getButton(HttpServletRequest request){
+        request.setAttribute("test", "abcd");
+        return "widgets/button";
+    }
 	
+	@RequestMapping({"/login"})
+    public String login(HttpServletRequest request){
+        request.setAttribute("test", "abcd");
+        //System.out.println(request.getParameter("userName").toString()+request.getParameter("password").toString());
+        return "widgets/login";
+    }
+	
+	@RequestMapping({"/register"}) 
+    public String register(HttpServletRequest request){
+        request.setAttribute("test", "abcd");
+        return "widgets/register";
+    }
+	public void a() {}
 }
