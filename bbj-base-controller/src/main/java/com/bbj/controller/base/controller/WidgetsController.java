@@ -12,18 +12,30 @@ import org.springframework.web.bind.annotation.RequestMapping;
  *
  */
 @Controller
-@RequestMapping({"/base/widgets"})
-public class WidgetsController {
+@RequestMapping({"/base/widgets" })
+public class WidgetsController
+{
 
-	/**
-	 * 跳转到grid页面
-	 * @param request
-	 * @return 跳转的页面
-	 */
-	@RequestMapping({"/grid"})
-	public String grid(HttpServletRequest request){
-		request.setAttribute("test", "abcd");
-		return "widgets/grid";
-	}
-	
+    /**
+     * 跳转到grid页面
+     * @param request
+     * @return 跳转的页面
+     */
+    @RequestMapping({"/grid" })
+    public String grid(HttpServletRequest request) {
+        request.setAttribute("test", "abcd");
+        return "widgets/grid";
+    }
+
+    /**
+     * 跳转到bbjwidgets页面
+     * @param request
+     * @return 跳转的页面
+     */
+    @RequestMapping({"/bbjwidgets" })
+    public String bbjwidgets(HttpServletRequest request) {
+        request.setAttribute("test", "abcd");
+        return "widgets/bbjwidgets";
+    }
+
 }
