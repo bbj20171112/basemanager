@@ -26,8 +26,8 @@ public class EncodingFilter implements Filter
         HttpServletResponse res = (HttpServletResponse) response;
 
         // 处理响应乱码
-        response.setContentType("text/html;charset=utf-8");
-        response.setCharacterEncoding("utf-8");
+        response.setContentType("text/html;charset=UTF-8");
+        response.setCharacterEncoding("UTF-8");
 
         // 放行的时候应该传入增强后的request对象
         chain.doFilter(req, res);
