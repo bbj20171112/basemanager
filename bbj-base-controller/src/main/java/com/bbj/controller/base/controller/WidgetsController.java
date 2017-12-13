@@ -43,5 +43,11 @@ public class WidgetsController {
         request.setAttribute("test", "abcd");
         return "widgets/register";
     }
+	
+	@RequestMapping({"/bbjwidgets"}) 
+    public String bbjwidgets(HttpServletRequest request){
+        request.setAttribute("test", "abcd");
+        return "widgets/bbjwidgets";
+    }
 	public void a() {}
 }
