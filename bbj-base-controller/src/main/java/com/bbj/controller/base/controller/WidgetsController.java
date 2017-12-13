@@ -12,30 +12,36 @@ import org.springframework.web.bind.annotation.RequestMapping;
  *
  */
 @Controller
-@RequestMapping({"/base/widgets" })
-public class WidgetsController
-{
+@RequestMapping({"/base/widgets"})
+public class WidgetsController {
 
-    /**
-     * 跳转到grid页面
-     * @param request
-     * @return 跳转的页面
-     */
-    @RequestMapping({"/grid" })
-    public String grid(HttpServletRequest request) {
+	/**
+	 * 跳转到grid页面 
+	 * @param request
+	 * @return 跳转的页面
+	 */
+	@RequestMapping({"/grid"})
+	public String grid(HttpServletRequest request){
+		request.setAttribute("test", "abcd");
+		return "widgets/grid";
+	}
+	@RequestMapping({"/button"})
+    public String getButton(HttpServletRequest request){
         request.setAttribute("test", "abcd");
-        return "widgets/grid";
+        return "widgets/button";
     }
-
-    /**
-     * 跳转到bbjwidgets页面
-     * @param request
-     * @return 跳转的页面
-     */
-    @RequestMapping({"/bbjwidgets" })
-    public String bbjwidgets(HttpServletRequest request) {
+	
+	@RequestMapping({"/login"})
+    public String login(HttpServletRequest request){
         request.setAttribute("test", "abcd");
-        return "widgets/bbjwidgets";
+        //System.out.println(request.getParameter("userName").toString()+request.getParameter("password").toString());
+        return "widgets/login";
     }
-
+	
+	@RequestMapping({"/register"}) 
+    public String register(HttpServletRequest request){
+        request.setAttribute("test", "abcd");
+        return "widgets/register";
+    }
+	public void a() {}
 }
